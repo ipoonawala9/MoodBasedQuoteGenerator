@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Based Quote Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: #6C63FF; font-size: 2.5rem; margin-bottom: 20px;">
+            MoodQuotes: Elevate Your Emotion with Words
+          </h1>
+                 <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Select Your Mood</h2>
+            <select id="moodSelect">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="stressed">Stressed</option>
+                <option value="motivated">Motivated</option>
+            </select>
+            <br>
+            <button onclick="showQuote()">Show Quote</button>
+            <button onclick="nextQuote()">Next Quote</button>
+            <p id="quote"></p>
+        </div>
+        <audio id="bgAudio" loop autoplay></audio>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MoodQuotes. Designed for emotional connection through code ❤️</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
